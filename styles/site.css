@@ -66,6 +66,21 @@ blockquote footer {
     border-top: 1px solid var(--color-border);
     color: var(--color-muted);
 }
+img[src$="cheese-fresh.svg"] {
+    view-transition-name: cheese-fresh;
+}
+
+img[src$="cheese-soft.svg"] {
+    view-transition-name: cheese-soft;
+}
+
+img[src$="cheese-blue.svg"] {
+    view-transition-name: cheese-blue;
+}
+
+img[src$="cheese-hard.svg"] {
+    view-transition-name: cheese-hard;
+}
 
 @media (max-width: 40rem) {
     .site-header {
