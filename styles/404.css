@@ -1,0 +1,51 @@
+.not-found-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+}
+
+.not-found-page > .site-header,
+.not-found-page > .site-navigation,
+.not-found-page > .site-footer {
+    width: min(100% - 2rem, var(--content-width));
+    margin-inline: auto;
+}
+
+.not-found-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg);
+}
+
+.not-found-card {
+    width: min(100%, 32rem);
+    padding: var(--space-lg);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    border-block-start: 0.35rem solid var(--color-accent);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+}
+
+.not-found-card img {
+    width: min(100%, 16rem);
+    height: auto;
+    margin-inline: auto;
+}
+
+.not-found-card a {
+    display: inline-block;
+    margin-block-start: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+}
+
+.not-found-card a:hover,
+.not-found-card a:focus-visible {
+    background-color: var(--color-primary-dark);
+}
