@@ -1,6 +1,6 @@
 .home-page {
-    --nav-width: 11rem;
-    --aside-width: 16rem;
+    --nav-width: 14rem;
+    --aside-width: 20rem;
 
     display: grid;
     grid-template-areas:
