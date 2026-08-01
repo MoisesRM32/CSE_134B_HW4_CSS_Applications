@@ -1,0 +1,107 @@
+@import url("./tokens.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--color-primary-dark);
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+}
+
+header,
+main,
+footer {
+    width: min(100% - 2rem, var(--content-width));
+    margin-inline: auto;
+}
+
+.site-header {
+    padding-block: var(--space-md);
+}
+
+.site-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    padding: 0;
+    margin: var(--space-md) 0 0;
+    list-style: none;
+}
+
+.site-header nav a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-footer {
+    padding-block: var(--space-lg);
+    margin-top: var(--space-xl);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-muted);
+}
+
+.skip-link {
+    position: absolute;
+    top: -5rem;
+    left: var(--space-md);
+    z-index: 100;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-text);
+    color: white;
+}
+
+.skip-link:focus {
+    top: var(--space-md);
+}
+
+@media (max-width: 375px) {
+    .site-header nav ul {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @view-transition {
+        navigation: auto;
+    }
+}
