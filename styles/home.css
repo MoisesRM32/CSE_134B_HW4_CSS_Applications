@@ -1,0 +1,117 @@
+.home-page {
+    --nav-width: 11rem;
+    --aside-width: 16rem;
+
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: var(--nav-width) minmax(0, 1fr) var(--aside-width);
+    grid-template-rows: auto 1fr auto;
+    min-height: 100svh;
+}
+
+.home-page > .site-header {
+    grid-area: header;
+    padding: var(--space-md);
+    border-block-end: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+}
+
+.home-page > .site-navigation {
+    grid-area: nav;
+    padding: var(--space-md);
+    border-inline-end: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+}
+
+.home-page > .site-navigation ul {
+    display: block;
+}
+
+.home-page > .site-navigation li {
+    margin-block-end: var(--space-sm);
+}
+
+.home-page > .home-content {
+    grid-area: main;
+    padding: var(--space-lg);
+}
+
+.home-page > .cheese-month {
+    grid-area: aside;
+    padding: var(--space-md);
+    border-inline-start: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+}
+
+.home-page > .site-footer {
+    grid-area: footer;
+    padding: var(--space-md);
+    border-block-start: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+}
+
+.home-content {
+    max-width: 48rem;
+}
+
+.home-content h2,
+.cheese-month h2 {
+    margin-block-start: 0;
+}
+
+.cheese-month img {
+    width: 100%;
+    height: auto;
+    margin-block: var(--space-md);
+}
+
+.fact-button {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-primary);
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.fact-button:hover,
+.fact-button:focus-visible {
+    background-color: var(--color-primary-dark);
+}
+
+.cheese-fact {
+    max-width: 24rem;
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+}
+
+.cheese-fact h2 {
+    margin-block-start: 0;
+}
+
+@media (max-width: 40rem) {
+    .home-page {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+    }
+
+    .home-page > .site-navigation,
+    .home-page > .cheese-month {
+        border-inline: none;
+        border-block-end: 1px solid var(--color-border);
+    }
+}

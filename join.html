@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Join The CSE Cheese Society."
+  >
+
+  <title>Join | CSE Cheese Society</title>
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/site.css">
+</head>
+
+<body class="join-page">
+  <header class="site-header">
+    <a href="index.html" class="site-logo">
+      <img
+        src="images/logo.svg"
+        alt="CSE Cheese Society"
+        width="160"
+        height="160"
+      >
+    </a>
+
+    <h1>The CSE Cheese Society</h1>
+  </header>
+
+  <nav class="site-navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide/index.html">Cheese Guide</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="join.html" aria-current="page">Join</a></li>
+    </ul>
+  </nav>
+
+  <main class="join-content">
+    <section class="join-card">
+      <h2>Join the Society</h2>
+
+      <p>
+        Become a member of The CSE Cheese Society and take part in tastings,
+        discussions, and cheese-related events.
+      </p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="favorite-cheese">Favorite cheese</label>
+          <input
+            type="text"
+            id="favorite-cheese"
+            name="favorite-cheese"
+          >
+        </p>
+
+        <p>
+          <label for="reason">Why would you like to join?</label>
+          <textarea
+            id="reason"
+            name="reason"
+            rows="5"
+          ></textarea>
+        </p>
+
+        <button type="submit">Join the Society</button>
+      </form>
+
+      <button type="button" commandfor="why-join" command="show-modal">
+        Why join?
+      </button>
+
+      <dialog id="why-join">
+        <h2>Why Join?</h2>
+
+        <p>
+          Members can attend tastings, meet other cheese enthusiasts, and
+          learn more about cheese families and production methods.
+        </p>
+
+        <button type="button" commandfor="why-join" command="close">
+          Close
+        </button>
+      </dialog>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 The CSE Cheese Society. Cheese responsibly.</p>
+  </footer>
+</body>
+</html>

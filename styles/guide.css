@@ -1,0 +1,52 @@
+.guide-content {
+  width: min(100% - 2rem, 50rem);
+  margin-inline: auto;
+  padding-block: var(--space-lg);
+}
+
+.guide-content > article > header {
+  margin-block-end: var(--space-lg);
+}
+
+.guide-content section {
+  margin-block-start: var(--space-xl);
+}
+
+.family-entry {
+  margin-block: var(--space-lg);
+  padding-block-end: var(--space-lg);
+  border-block-end: 1px solid var(--color-border);
+}
+
+.family-entry img {
+  width: min(100%, 20rem);
+  height: auto;
+}
+
+.family-entry h4 {
+  margin-block: var(--space-md) var(--space-sm);
+}
+
+.family-entry h4 a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.family-entry h4 a:hover,
+.family-entry h4 a:focus-visible {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.warning {
+  padding: var(--space-md);
+  border-inline-start: 0.4rem solid var(--color-accent);
+  background-color: var(--color-surface);
+}
+
+blockquote {
+  margin-inline: 0;
+  padding-inline-start: var(--space-md);
+  border-inline-start: 1px solid var(--color-border);
+  font-style: italic;
+}
