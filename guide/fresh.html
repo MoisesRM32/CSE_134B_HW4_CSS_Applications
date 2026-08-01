@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../styles/tokens.css">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/site.css">
+  <link rel="stylesheet" href="../styles/family.css">
 </head>
 
 <body class="family-page">
@@ -33,55 +34,68 @@
   <nav class="site-navigation" aria-label="Main navigation">
     <ul>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../guide/index.html">Cheese Guide</a></li>
+      <li><a href="index.html">Cheese Guide</a></li>
       <li><a href="../about.html">About</a></li>
       <li><a href="../join.html">Join</a></li>
     </ul>
   </nav>
 
   <main class="family-content">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <ol>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../guide/index.html">Cheese Guide</a></li>
-        <li aria-current="page">Fresh Cheeses</li>
-      </ol>
-    </nav>
-
-    <article class="family-detail">
-      <header>
-        <h2>Fresh Cheeses</h2>
-      </header>
-
+    <article class="family-copy">
       <img
+        class="family-hero"
         src="../images/cheese-fresh.svg"
         alt="Illustration of fresh cheese"
-        width="600"
-        height="400"
+        width="800"
+        height="500"
       >
 
-      <p>
-        Fresh cheeses are young cheeses that are eaten soon after they are made.
-        They are usually soft, moist, and mild because they have not spent time
-        aging.
-      </p>
+      <h2>Fresh Cheeses</h2>
 
       <p>
-        Common examples include mozzarella, ricotta, mascarpone, cottage
-        cheese, and fresh goat cheese. Their flavor is often milky, creamy, and
-        slightly tangy.
+        Young, moist, and mild. Fresh cheeses skip aging entirely: the curds
+        are drained, maybe lightly salted, and sent straight to the table.
+        They taste of milk itself, which is the whole point.
       </p>
 
-      <p>
-        Because fresh cheeses contain more moisture than aged cheeses, they
-        should be refrigerated and eaten within a short period of time.
-      </p>
+      <section>
+        <h3>Character</h3>
+        <p>
+          Soft, spreadable or springy, high in moisture. Flavors are delicate
+          — milky, lemony, faintly sweet. There is nowhere for a flaw to hide,
+          so freshness is everything.
+        </p>
+      </section>
+
+      <section>
+        <h3>Notable Members</h3>
+        <p>
+          Mozzarella, ricotta, chevre, queso fresco, and mascarpone.
+        </p>
+      </section>
+
+      <section>
+        <h3>How to Enjoy</h3>
+        <p>
+          Eat within days. Tear mozzarella over tomatoes, spoon ricotta onto
+          toast with honey, crumble chevre into a salad. Fresh cheese belongs
+          to summer.
+        </p>
+      </section>
+
+      <section>
+        <h3>Did You Know?</h3>
+        <p>
+          Real mozzarella di bufala is made from the milk of water buffalo,
+          whose herds were brought to Italy over a thousand years ago.
+        </p>
+      </section>
+
+      <nav class="family-navigation" aria-label="Cheese family navigation">
+        <a href="hard.html">← Previous: Hard Cheeses</a>
+        <a href="soft.html">Next: Soft-Ripened Cheeses →</a>
+      </nav>
     </article>
-
-    <nav class="family-navigation" aria-label="Cheese family navigation">
-      <a href="hard.html">← Previous: Hard Cheeses</a>
-      <a href="soft.html">Next: Soft-Ripened Cheeses →</a>
-    </nav>
   </main>
 
   <footer class="site-footer">
